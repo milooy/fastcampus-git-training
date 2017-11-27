@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>팜므어 번역기</title>
+</head>
+
+<body>
+  <h1>팜므어 번역기</h1>
+  <div>
+    <textarea class="femme"></textarea>
+  </div>
+  <div class="result"></div>
+  <button class="change">변환</button>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="hangul.js"></script>
+  <script src="main.js"></script>
+  <script>
+    $(function() {
+      $('.change').on('click', function() {
+        var originText = $(".femme").val();
+        var afterText = femme(originText);
+        $(".result").text(afterText);
+      })
+    })
+  </script>
+</body>
+
+</html>

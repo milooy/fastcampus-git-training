@@ -12,6 +12,8 @@
 - master저장소 추가
 - fetch하고 최신 master 커밋에서 rebase하기
 - Push하고 master브랜치로 pull request
+- `git subtree push --prefix 본인폴더이름 origin gh-pages`
+
 
 ### part.2 Single Repo Style (rebase, branch, pull request)
 - 원본 리포 클론받기
